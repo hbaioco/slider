@@ -34,11 +34,19 @@ if (digitalRead(2) == LOW)
 {
 pos = 80;  
 digitalWrite(8,HIGH);
+for (pos = 80; pos <= 105; pos +=1){
+myservo.write(pos);
+delay(200);
+}
 }
 
 if (digitalRead(3) == LOW)
 {
 pos = 105;  
 digitalWrite(8,LOW);
+for (pos = 80; pos <= 105; pos +=1){
+myservo.write(pos);
+delay(200);
+}
 }
 }
